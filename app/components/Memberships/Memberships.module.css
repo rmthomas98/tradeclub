@@ -1,0 +1,60 @@
+.wrapper {
+  padding: 75px 16px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header {
+  font-size: 200%;
+  font-family: "Black Ops One", cursive;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.childContainer {
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #424242;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.largeTitle {
+  font-size: 180%;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Inconsolata", monospace;
+}
+
+.title {
+  font-size: 100%;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.smallDescription {
+  font-size: 75%;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    font-size: 180%;
+    font-family: "Black Ops One", cursive;
+  }
+
+  .subHeader {
+    font-size: 85%;
+    font-weight: 500;
+  }
+}
