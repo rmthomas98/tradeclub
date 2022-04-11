@@ -46,7 +46,7 @@ const Offer = () => {
         </Fade>
           </div>
         </div>
-        <div className={styles.flexContainer}>
+        <div className={`${styles.flexContainer} ${styles.columnReverse}`}>
           <div className={styles.infoContainer}>
             <Fade direction="up">
             <p className={styles.title}>High-End Technology</p>
