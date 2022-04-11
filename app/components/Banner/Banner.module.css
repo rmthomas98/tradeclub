@@ -9,7 +9,13 @@
   padding-left: 16px;
   padding-right: 16px;
   height: 800px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000dc), to(#00000075)),
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#000000dc),
+      to(#00000075)
+    ),
     url("../../public/images/banner.jpg");
   background-image: -o-linear-gradient(#000000dc, #00000075),
     url("../../public/images/banner.jpg");
@@ -106,5 +112,8 @@
     margin-top: 10px;
     font-size: 85%;
     font-weight: 500;
+  }
+  .container {
+    padding-top: 200px;
   }
 }
