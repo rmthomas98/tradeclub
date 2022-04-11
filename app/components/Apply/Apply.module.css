@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .wrapper {
   padding: 75px 16px;
   background: #0f0f0f;
@@ -26,10 +33,14 @@
 }
 
 .nameContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -51,6 +62,26 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.textarea::-webkit-input-placeholder {
+  font-size: 90%;
+}
+
+.textarea::-moz-placeholder {
+  font-size: 90%;
+}
+
+.textarea:-ms-input-placeholder {
+  font-size: 90%;
+}
+
+.textarea::-ms-input-placeholder {
+  font-size: 90%;
+}
+
+.textarea::placeholder {
+  font-size: 90%;
+}
+
 .input {
   outline: none;
   background: #000;
@@ -60,7 +91,9 @@
   color: #fff;
   width: 100%;
   font-family: "Montserrat", sans-serif;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .label {
@@ -79,6 +112,8 @@
   color: #000;
   padding: 10px 30px;
   border-radius: 10px;
+  -webkit-transition: 400ms background;
+  -o-transition: 400ms background;
   transition: 400ms background;
   font-family: "Montserrat", sans-serif;
 }
@@ -94,7 +129,10 @@
     font-weight: 500;
   }
   .flexContainer {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

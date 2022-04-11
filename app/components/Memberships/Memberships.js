@@ -1,11 +1,15 @@
 import styles from "./Memberships.module.css";
+import {Fade} from 'react-awesome-reveal';
 
 const Memberships = () => {
   return (
     <div className={styles.wrapper} id="memberships">
       <div className={styles.container}>
+        <Fade direction="up">
         <p className={styles.header}>Membership Options</p>
+        </Fade>
         <div className={styles.flexContainer}>
+          <Fade direction="up">
           <div className={styles.childContainer}>
             <p className={styles.largeTitle}>$997</p>
             <p className={styles.title}>1 Week Access</p>
@@ -16,6 +20,8 @@ const Memberships = () => {
               atmospheres out there.
             </p>
           </div>
+          </Fade>
+          <Fade direction="up">
           <div className={styles.childContainer}>
             <p className={styles.largeTitle}>$2,999/mo</p>
             <p className={styles.title}>3-Month Access Plan</p>
@@ -26,8 +32,10 @@ const Memberships = () => {
               and our amenities.
             </p>
           </div>
+          </Fade>
         </div>
         <div className={styles.flexContainer}>
+          <Fade direction="up">
           <div className={styles.childContainer}>
             <p className={styles.largeTitle}>$2,499/mo</p>
             <p className={styles.title}>6-Month Access Plan</p>
@@ -37,6 +45,8 @@ const Memberships = () => {
               ultimately take that next step up in your trading career.
             </p>
           </div>
+          </Fade>
+          <Fade direction="up">
           <div className={styles.childContainer}>
             <p className={styles.largeTitle}>$1,999/mo</p>
             <p className={styles.title}>12-Month Access Plan</p>
@@ -47,6 +57,7 @@ const Memberships = () => {
               entire year. Make Trade Club your second home.
             </p>
           </div>
+          </Fade>
         </div>
       </div>
     </div>

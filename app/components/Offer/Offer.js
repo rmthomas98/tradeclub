@@ -1,17 +1,23 @@
 import styles from "./Offer.module.css";
 import { BsCheck } from "react-icons/bs";
+import {Fade, Cascade} from 'react-awesome-reveal';
 
 const Offer = () => {
   return (
     <div className={styles.wrapper} id="what-we-offer">
       <div className={styles.container}>
+        <Fade direction="up">
         <p className={styles.header}>What We Offer</p>
+        </Fade>
+        <Fade direction="up">
         <p className={styles.subHeader}>
           Trade Club is a contemporary co-working space that provides the
           ultimate edge over the average retail trader.
         </p>
+        </Fade>
         <div className={styles.flexContainer}>
           <div className={styles.imageLeftSideContainer}>
+          <Fade direction="left">
             <div className={`${styles.imageContainer} ${styles.atmosphere}`}>
               {/* <Image
                 src={atmosphere}
@@ -20,9 +26,13 @@ const Offer = () => {
                 width={width > 895 ? 500 : 400}
               /> */}
             </div>
+          </Fade>
           </div>
           <div className={styles.infoContainer}>
+            <Fade direction="up">
             <p className={styles.title}>Professional Atmosphere</p>
+            </Fade>
+          <Fade direction="up">
             <p className={styles.smallDescription}>
               Trading is a lonely game, we all know that. But, the conflicting
               thing is that your key to truly succeeding in this industry is
@@ -33,11 +43,15 @@ const Offer = () => {
               our team of professional traders and mentors during the trading
               day.
             </p>
+        </Fade>
           </div>
         </div>
         <div className={styles.flexContainer}>
           <div className={styles.infoContainer}>
+            <Fade direction="up">
             <p className={styles.title}>High-End Technology</p>
+            </Fade>
+            <Fade direction="up">
             <p className={styles.smallDescription}>
               Having the right technology at your fingertips can mean the
               difference between a winning trade and a losing trade. We have
@@ -45,6 +59,8 @@ const Offer = () => {
               researching the best trading setups so you can walk right into
               your dream setup. At every desk we offer:
             </p>
+            </Fade>
+            <Fade cascade direction="left" damping={0.3} delay={700}>
             <div className={styles.itemContainer} style={{ marginTop: 20 }}>
               <BsCheck style={{ marginRight: 5, minWidth: 20 }} />
               <p className={styles.smallestDescription}>
@@ -70,8 +86,10 @@ const Offer = () => {
                 2 Fiber Optic Internet Options (1GB/1GB and 2GB/2GB)
               </p>
             </div>
+            </Fade>
           </div>
           <div className={styles.imageRightSideContainer}>
+            <Fade direction="right">
             <div className={`${styles.imageContainer} ${styles.tech}`}>
               {/* <Image
                 src={technology}
@@ -80,10 +98,12 @@ const Offer = () => {
                 width={width > 895 ? 500 : 400}
               /> */}
             </div>
+            </Fade>
           </div>
         </div>
         <div className={styles.flexContainer} style={{ marginBottom: 0 }}>
           <div className={styles.imageLeftSideContainer}>
+            <Fade direction="left">
             <div className={`${styles.imageContainer} ${styles.amenities}`}>
               {/* <Image
                 src={amenities}
@@ -92,9 +112,13 @@ const Offer = () => {
                 width={width > 895 ? 500 : 400}
               /> */}
             </div>
+            </Fade>
           </div>
           <div className={styles.infoContainer}>
+            <Fade direction="up">
             <p className={styles.title}>Unrivaled Amenities</p>
+            </Fade>
+            <Fade direction="up">
             <p className={styles.smallDescription}>
               We are all about giving our members an edge that 99% of the
               competition is lacking. That is why we made the focal point of our
@@ -102,6 +126,8 @@ const Offer = () => {
               trader, but more importantly the improvement of their health,
               wellness, and mentality. As a member you will get access to:
             </p>
+            </Fade>
+            <Fade cascade direction="right" delay={700} damping={0.3}>
             <div className={styles.itemContainer} style={{ marginTop: 20 }}>
               <BsCheck style={{ marginRight: 5, minWidth: 20 }} />
               <p className={styles.smallestDescription}>
@@ -124,6 +150,7 @@ const Offer = () => {
                 Independent Key Fob Access
               </p>
             </div>
+            </Fade>
           </div>
         </div>
       </div>

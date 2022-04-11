@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .wrapper {
   padding: 75px 16px;
   background: #0f0f0f;
@@ -15,30 +22,50 @@
 }
 
 .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
   margin-top: 70px;
   max-width: 900px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .imageContainerMike,
 .imageContainerAustin {
   height: 370px;
   width: 370px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#0000008c)),
+    url("../../public/images/mike.jpg");
+  background-image: -o-linear-gradient(transparent, #0000008c),
+    url("../../public/images/mike.jpg");
   background-image: linear-gradient(transparent, #0000008c),
     url("../../public/images/mike.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 20px;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  box-shadow: 0px 10px 20px #000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-shadow: 0px 10px 20px #000;
+          box-shadow: 0px 10px 20px #000;
 }
 
 .imageContainerAustin {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#0000008c)),
+    url("../../public/images/austin.jpg");
+  background-image: -o-linear-gradient(transparent, #0000008c),
+    url("../../public/images/austin.jpg");
   background-image: linear-gradient(transparent, #0000008c),
     url("../../public/images/austin.jpg");
 }
@@ -56,8 +83,13 @@
 
 @media only screen and (max-width: 800px) {
   .flexContainer {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .imageContainerMike {
     margin-bottom: 50px;

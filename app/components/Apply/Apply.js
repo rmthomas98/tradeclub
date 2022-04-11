@@ -1,4 +1,5 @@
 import styles from "./Apply.module.css";
+import {Fade} from 'react-awesome-reveal';
 
 const Apply = () => {
   return (
@@ -8,6 +9,7 @@ const Apply = () => {
         <p className={styles.subHeader}>
           Apply below for a Trading Desk. First come, first serve!
         </p>
+        <Fade direction="up">
         <div className={styles.nameContainer}>
           <div className={styles.inputContainer} style={{ marginRight: 20 }}>
             <p className={styles.label}>First Name</p>
@@ -87,6 +89,7 @@ const Apply = () => {
             Submit
           </button>
         </div>
+        </Fade>
       </form>
     </div>
   );
