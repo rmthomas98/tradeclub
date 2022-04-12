@@ -27,16 +27,17 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .childContainer {
   padding: 20px;
   width: 100%;
-  border: 1px solid #424242;
+  border: 1px solid #313131;
   border-radius: 20px;
   margin-bottom: 20px;
+  background: #000;
 }
 
 .largeTitle {
@@ -64,9 +65,17 @@
     font-size: 180%;
     font-family: "Black Ops One", cursive;
   }
-
+  .largeTitle {
+    font-size: 150%;
+  }
+  .title {
+    font-size: 90%;
+  }
   .subHeader {
     font-size: 85%;
     font-weight: 500;
+  }
+  .smallDescription {
+    font-size: 70%;
   }
 }

@@ -152,7 +152,12 @@
     font-size: 180%;
     font-family: "Black Ops One", cursive;
   }
-
+  .smallDescription {
+    font-size: 70%;
+  }
+  .smallestDescription {
+    font-size: 65%;
+  }
   .subHeader {
     font-size: 85%;
     font-weight: 500;
